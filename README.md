@@ -108,23 +108,26 @@ The dataset contains **69,889 rows** with **no missing values**, representing un
 ##  Project Structure
 
 ```
-ab-test-analysis/
-│
-├── 📄 ab_data.csv                              # Raw experimental dataset (69,889 records)
-│
-├── 📓 analyze_ab_test_results_completed.ipynb  # Executed Jupyter notebook (all outputs embedded)
-├── 🌐 analyze_ab_test_results_completed.html   # Rendered HTML version of the notebook
-├── 🐍 analyze_ab_test_results_completed.py     # Standalone Python script (fully commented)
-│
-├── 📊 ab_test_analysis.pptx                    # 6-slide PowerPoint presentation
-├── 📝 ab_test_report.docx                      # Comprehensive Word project report (11 pages)
-│
-└── 📖 README.md                                # This file
+ab-test-conversion-lift/
+├── data/
+│   └── ab_data.csv
+├── notebooks/
+│   └── analyze_ab_test_results.ipynb/html
+├── reports/
+│   ├── ab_test_analysis.pdf
+│   ├── ab_test_report.pdf
+│   └── analyze_ab_test_results_executed.pdf
+├── src/
+│   └── analyze_ab_test_results.py
+├── .gitignore                 # Ignore .DS_Store, __pycache__/, .ipynb_checkpoints/, venv/
+├── README.md                  # Update file paths, extensions, and clone URL
+└── requirements.txt           # pandas, numpy, matplotlib, scikit-learn
+
 ```
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 The analytical pipeline is structured as five modular stages, each with clearly defined inputs, processes, and outputs. A fixed random seed (`0`) ensures full reproducibility across all runs.
 
@@ -243,6 +246,11 @@ flowchart TD
 
 ---
 
+A full write-up of the methodology, results framing, business value, and limitations is available in [AB Test Report](reports/ab_test_report.pdf).
+
+A summary presentation of the project is available in [AB Test Project Presentation](reports/ab_test_analysis.pdf).
+
+
 ##  Installation & Setup
 
 ### Prerequisites
@@ -253,8 +261,8 @@ flowchart TD
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ab-test-analysis.git
-cd ab-test-analysis
+git clone https://github.com/eaamankwah/ab-test-conversion-lift.git
+cd ab-test-conversion-lift
 ```
 
 ### 2. Create a Virtual Environment (recommended)
