@@ -1,5 +1,5 @@
 # Analysis of A/B Test Results
-### E-Commerce Conversion Rate Experiment · Udacity Data Scientist Nanodegree
+### E-Commerce Conversion Rate Experiment
 
 <div align="center">
 
@@ -43,9 +43,9 @@ The analysis addresses three possible business decisions:
 
 | Decision | Condition |
 |----------|-----------|
-| ✅ **Implement** the new treatment page | Strong statistical evidence of higher conversion |
-| ❌ **Keep** the old control page | No meaningful difference detected |
-| ⏳ **Extend** the experiment | Insufficient evidence — ambiguous result |
+| **Implement** the new treatment page | Strong statistical evidence of higher conversion |
+| **Keep** the old control page | No meaningful difference detected |
+| **Extend** the experiment | Insufficient evidence — ambiguous result |
 
 The project moves through **descriptive statistics → conditional probability → simulation-based hypothesis testing → logistic regression**, building a multi-layered evidentiary case for the final recommendation.
 
@@ -59,16 +59,16 @@ The project moves through **descriptive statistics → conditional probability �
 
 | Metric | Value |
 |--------|-------|
-| 👥 Total Users | **69,889** |
-| 🎯 Overall Conversion Rate | **13.05%** |
-| 🔵 Control Conversion Rate | **10.53%** |
-| 🟢 Treatment Conversion Rate | **15.53%** |
-| 📈 Absolute Lift | **+5.01 percentage points** |
-| 📊 Relative Lift | **+47.6%** |
-| 🔬 p-value | **≈ 0.000** |
-| ✅ Significance Level (α) | **0.05** |
-| 🧮 Null Hypothesis Decision | **REJECTED** |
-| 🌍 Geographic Confounding | **None detected** |
+|  Total Users | **69,889** |
+|  Overall Conversion Rate | **13.05%** |
+|  Control Conversion Rate | **10.53%** |
+|  Treatment Conversion Rate | **15.53%** |
+|  Absolute Lift | **+5.01 percentage points** |
+|  Relative Lift | **+47.6%** |
+|  p-value | **≈ 0.000** |
+|  Significance Level (α) | **0.05** |
+|  Null Hypothesis Decision | **REJECTED** |
+|  Geographic Confounding | **None detected** |
 
 </div>
 
@@ -121,6 +121,7 @@ ab-test-conversion-lift/
 │   └── analyze_ab_test_results.py
 ├── .gitignore                 # Ignore .DS_Store, __pycache__/, .ipynb_checkpoints/, venv/
 ├── README.md                  # Update file paths, extensions, and clone URL
+├── LICENSE                    # MIT license
 └── requirements.txt           # pandas, numpy, matplotlib, scikit-learn
 
 ```
@@ -285,17 +286,6 @@ Or install from a requirements file:
 pip install -r requirements.txt
 ```
 
-**`requirements.txt`**
-```
-pandas>=2.0.0
-numpy>=1.26.0
-matplotlib>=3.8.0
-scikit-learn>=1.4.0
-jupyter>=1.0.0
-nbformat>=5.9.0
-nbconvert>=7.0.0
-```
-
 ### 4. Verify Installation
 
 ```bash
@@ -304,7 +294,7 @@ python -c "import pandas, numpy, matplotlib, sklearn; print('All dependencies OK
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Option A — Run the Jupyter Notebook (recommended)
 
